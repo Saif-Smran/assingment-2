@@ -1,16 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "Quicksand", serif;
 }
 
 /* Shared styles */
 
-.flex{
+main > section{
+    margin-top: 60px;
+}
+
+.section-title{
+    font-size: 2.875rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.flex {
     display: flex;
 }
 
-.btn-primary{
+.btn-primary {
     font-weight: 600;
     font-size: 1.25rem;
     background-color: orange;
@@ -21,15 +31,15 @@
     cursor: pointer;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: rgb(206, 146, 34);
 }
 
-.hidden-desktop{
+.hidden-desktop {
     display: none;
 }
 
-.btn-sec{
+.btn-sec {
     color: white;
     background-color: black;
     border-radius: 12px;
@@ -39,119 +49,213 @@
     border: none;
 }
 
-.btn-sec:hover{
+.btn-sec:hover {
     background-color: grey;
     cursor: pointer;
 }
 
+.bg-orange {
+    background-color: orange;
+}
+
+
+.btn-3 {
+    background-color: white;
+    color: rgb(135, 0, 255);
+    border: none;
+    font-weight: 700;
+    padding: 5px 23px;
+    border-radius: 12px;
+}
+
+.btn-3:hover {
+    background-color: rgb(237, 229, 229);
+    cursor: pointer;
+}
+
+.c-1 {
+    color: orange;
+}
+
+.c-2 {
+    color: #64C8FF;
+}
+
 /* Header */
 
-header{
+header {
     max-width: 1160px;
     margin: 0 auto;
 }
 
 /* Navber */
 
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-container{
+.nav-container {
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-title{
+.nav-title {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.nav-links{
+.nav-links {
     justify-content: space-between;
     align-items: center;
     gap: 32px;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 500;
 }
-.nav-links li{
+
+.nav-links li {
     list-style: none;
 }
 
-.link-1{
+.link-1 {
     color: orange;
     font-weight: 700;
 }
-.link-2{
+
+.link-2 {
     color: skyblue;
 }
-.link-3{
+
+.link-3 {
     color: rgb(5, 212, 223);
 }
-.link-4{
+
+.link-4 {
     color: rgb(93, 88, 239);
 }
 
 /* Hero section */
 
-.hero{
+.hero {
     align-items: center;
     justify-content: space-between;
 }
 
-.hero-container{
+.hero-container {
     max-width: 640px;
 }
 
-.hero-title{
+.hero-title {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 24px;
 }
 
-.hero-description{
+.hero-description {
     font-size: 1.25rem;
     font-weight: 400;
 }
 
-.c-1{
-    color: orange;
+
+/* Standard Curriculum */
+
+.curriculum{
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
 }
 
-.c-2{
-    color: skyblue;
+.curriculum-cards {
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.curriculum-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 367.8px;
+    height: 476.78px;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-2 {
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-3 {
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-card-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.curriculum-card-description {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Raleway", serif;
+    color: #808080;
+    text-align: center;
+}
+
+
+.btn img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
 }
 
 /* Media Query */
 
 @media screen and (max-width: 576px) {
-    .hidden-desktop{
+    .hidden-desktop {
         display: block;
     }
 
-    .hidden-mobile{
+    .hidden-mobile {
         display: none;
     }
 
-    img{
+    .hero-img img {
         width: 100%;
     }
 
-    hr{
+    hr {
         border: 0.5px solid rgb(254, 163, 1);
     }
 
-    .hero{
+    .hero {
         flex-direction: column-reverse;
     }
 
-    .hero-container{
+    .hero-container {
         text-align: center;
+    }
+
+    .curriculum{
+        gap: 20px;
+    }
+
+    .curriculum-cards {
+        flex-direction: column;
     }
 
 }
