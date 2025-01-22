@@ -2,6 +2,7 @@
 
 * {
     font-family: "Quicksand", serif;
+    margin-bottom: 0px;
 }
 
 /* Shared styles */
@@ -64,7 +65,7 @@ main>section {
     background-color: orange;
 }
 
-.pos{
+.pos {
     margin: 80px;
 }
 
@@ -257,7 +258,8 @@ header {
     background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
-.curriculum-card-title {
+.curriculum-card-title,
+.ab-sc {
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -280,7 +282,7 @@ header {
 /* Our Stories */
 
 .stories {
-    background: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background: url("../assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,9 +346,73 @@ header {
 
 /* footer */
 
-footer{
+footer {
     background: rgb(1, 172, 253);
     color: white;
+}
+
+.footer-content{
+    max-width: 1070.91px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 123px 0;
+}
+
+.kids-education{
+    max-width: 399.02px;
+}
+
+.ic {
+    display: flex;
+    justify-content: space-between;
+    width: 299.71px;
+}
+
+.ic img {
+    width: 100%;
+}
+
+.ic-title {
+    margin-top: 0px;
+    font-size: 2.63rem;
+    font-weight: 700;
+}
+
+.dec {
+    font-size: 1.25rem;
+}
+
+.about {
+    text-align: left;
+}
+
+.about ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.about li {
+    list-style: none;
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.touch-title {
+    font-weight: 700;
+    font-size: 1.625rem;
+}
+
+.logo{
+    margin-top: 35px;
 }
 
 /* Media Query */
@@ -392,8 +458,13 @@ footer{
         font-size: 9.36px;
     }
 
-    .pos{
+    .pos {
         margin: 20px;
+    }
+
+    .footer-content{
+        padding: 65px 20px;
+        flex-direction: column;
     }
 
 }
