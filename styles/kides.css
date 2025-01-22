@@ -54,6 +54,7 @@ main>section {
     font-size: 1.25rem;
     padding: 10px 45px;
     border: none;
+    margin: 24px 0;
 }
 
 .btn-sec:hover {
@@ -351,7 +352,7 @@ footer {
     color: white;
 }
 
-.footer-content{
+.footer-content {
     max-width: 1070.91px;
     margin: 0 auto;
     display: flex;
@@ -360,7 +361,7 @@ footer {
     padding: 123px 0;
 }
 
-.kids-education{
+.kids-education {
     max-width: 399.02px;
 }
 
@@ -411,8 +412,34 @@ footer {
     font-size: 1.625rem;
 }
 
-.logo{
+.logo {
     margin-top: 35px;
+}
+
+/* Marquee */
+
+@keyframes marquee {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-size: 2.25rem;
+    font-weight: 700;
 }
 
 /* Media Query */
@@ -462,9 +489,13 @@ footer {
         margin: 20px;
     }
 
-    .footer-content{
+    .footer-content {
         padding: 65px 20px;
         flex-direction: column;
+    }
+
+    .marquee span {
+        animation: marquee 10s linear infinite;
     }
 
 }
