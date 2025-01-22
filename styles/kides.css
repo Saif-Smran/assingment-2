@@ -453,6 +453,15 @@ footer {
         display: none;
     }
 
+    .navbar{
+        padding: 0 5px;
+    }
+    
+    .nav-container img{
+        position: relative;
+        top: -15px;
+    }
+
     .hero-img img {
         width: 100%;
     }
