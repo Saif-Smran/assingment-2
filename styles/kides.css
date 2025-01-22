@@ -3,3 +3,155 @@
 *{
     font-family: "Quicksand", serif;
 }
+
+/* Shared styles */
+
+.flex{
+    display: flex;
+}
+
+.btn-primary{
+    font-weight: 600;
+    font-size: 1.25rem;
+    background-color: orange;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: rgb(206, 146, 34);
+}
+
+.hidden-desktop{
+    display: none;
+}
+
+.btn-sec{
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 10px 45px;
+    border: none;
+}
+
+.btn-sec:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+/* Header */
+
+header{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* Navber */
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-links{
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.link-1{
+    color: orange;
+    font-weight: 700;
+}
+.link-2{
+    color: skyblue;
+}
+.link-3{
+    color: rgb(5, 212, 223);
+}
+.link-4{
+    color: rgb(93, 88, 239);
+}
+
+/* Hero section */
+
+.hero{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-container{
+    max-width: 640px;
+}
+
+.hero-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.hero-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.c-1{
+    color: orange;
+}
+
+.c-2{
+    color: skyblue;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 576px) {
+    .hidden-desktop{
+        display: block;
+    }
+
+    .hidden-mobile{
+        display: none;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    hr{
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .hero-container{
+        text-align: center;
+    }
+
+}
