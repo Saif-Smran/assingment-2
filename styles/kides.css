@@ -492,6 +492,7 @@ footer {
     .footer-content {
         padding: 65px 20px;
         flex-direction: column;
+        gap: 24px;
     }
 
     .marquee span {
